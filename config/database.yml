@@ -1,38 +1,16 @@
-<% PASSWORD_FILE = File.join(RAILS_ROOT, '..', '..', 'shared', 'config', 'dbpassword') %>
+# SQLite version 3.x
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)
 
-development:
-  adapter: mysql
-  database: bowler_hat_development
-  username: root
-  password: 
-  host: localhost
-  encoding: utf8
-  
-test: &TEST
-  adapter: mysql
-  database: bowler_hat_test
-  username: root
-  password: 
-  host: localhost
-  encoding: utf8
-  
-staging:
-  adapter: mysql
-  database: bowler_hat_staging
-  username: bowler_hat
-  password: <%= File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE %>
-  host: localhost
-  encoding: utf8
-  socket: /var/lib/mysql/mysql.sock
-  
-production:
-  adapter: mysql
-  database: bowler_hat_production
-  username: bowler_hat
-  password: <%= File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE %>
-  host: localhost
-  encoding: utf8
-  socket: /var/lib/mysql/mysql.sock
+development: &default
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+test: &test
+  <<: *default
+  database: db/test.sqlite3
 
 cucumber:
-  <<: *TEST
+  <<: *test
+
