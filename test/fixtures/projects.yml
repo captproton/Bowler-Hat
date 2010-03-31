@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+project_one:
+  id: <%= Fixtures.identify(:project_one) %>
+  name: Project1NameString
+  notes: Project1NotesText
+  start_date: 2010-03-31
+  end_date: 2010-03-31
+  completed: false
+  user_id: <%= Fixtures.identify(:user_one) %>
+
+project_two:
+  id: <%= Fixtures.identify(:project_two) %>
+  name: Project2NameString
+  notes: Project2NotesText
+  start_date: 2010-03-31
+  end_date: 2010-03-31
+  completed: false
+  user_id: <%= Fixtures.identify(:user_two) %>
+
+project_three:
+  id: <%= Fixtures.identify(:project_three) %>
+  name: Project3NameString
+  notes: Project3NotesText
+  start_date: 2010-03-31
+  end_date: 2010-03-31
+  completed: false
+  user_id: <%= Fixtures.identify(:user_three) %>
+
+project_four:
+  id: <%= Fixtures.identify(:project_four) %>
+  name: Project4NameString
+  notes: Project4NotesText
+  start_date: 2010-03-31
+  end_date: 2010-03-31
+  completed: false
+  user_id: <%= Fixtures.identify(:user_four) %>

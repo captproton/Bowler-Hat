@@ -34,6 +34,9 @@ Rails::Initializer.run do |config|
   config.gem 'validation_reflection',
              :version => '>= 0.3.6'
   config.gem 'hoptoad_notifier'
+  config.gem "restfulx", 
+             :version => ">= 1.2.4", 
+             :source => "http://rubygems.org"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

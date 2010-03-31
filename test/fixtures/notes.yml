@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+note_one:
+  id: <%= Fixtures.identify(:note_one) %>
+  content: Note1ContentText
+  user_id: <%= Fixtures.identify(:user_one) %>
+
+note_two:
+  id: <%= Fixtures.identify(:note_two) %>
+  content: Note2ContentText
+  user_id: <%= Fixtures.identify(:user_two) %>
+
+note_three:
+  id: <%= Fixtures.identify(:note_three) %>
+  content: Note3ContentText
+  user_id: <%= Fixtures.identify(:user_three) %>
+
+note_four:
+  id: <%= Fixtures.identify(:note_four) %>
+  content: Note4ContentText
+  user_id: <%= Fixtures.identify(:user_four) %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+location_one:
+  id: <%= Fixtures.identify(:location_one) %>
+  name: Location1NameString
+  notes: Location1NotesText
+  user_id: <%= Fixtures.identify(:user_one) %>
+
+location_two:
+  id: <%= Fixtures.identify(:location_two) %>
+  name: Location2NameString
+  notes: Location2NotesText
+  user_id: <%= Fixtures.identify(:user_two) %>
+
+location_three:
+  id: <%= Fixtures.identify(:location_three) %>
+  name: Location3NameString
+  notes: Location3NotesText
+  user_id: <%= Fixtures.identify(:user_three) %>
+
+location_four:
+  id: <%= Fixtures.identify(:location_four) %>
+  name: Location4NameString
+  notes: Location4NotesText
+  user_id: <%= Fixtures.identify(:user_four) %>

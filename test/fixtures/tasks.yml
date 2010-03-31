@@ -1,0 +1,49 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+task_one:
+  id: <%= Fixtures.identify(:task_one) %>
+  name: Task1NameString
+  notes: Task1NotesText
+  start_time: 2010-03-31 10:47:16
+  end_time: 2010-03-31 10:47:16
+  completed: false
+  next_action: false
+  project_id: <%= Fixtures.identify(:project_one) %>
+  location_id: <%= Fixtures.identify(:location_one) %>
+  user_id: <%= Fixtures.identify(:user_one) %>
+
+task_two:
+  id: <%= Fixtures.identify(:task_two) %>
+  name: Task2NameString
+  notes: Task2NotesText
+  start_time: 2010-03-31 10:47:16
+  end_time: 2010-03-31 10:47:16
+  completed: false
+  next_action: false
+  project_id: <%= Fixtures.identify(:project_two) %>
+  location_id: <%= Fixtures.identify(:location_two) %>
+  user_id: <%= Fixtures.identify(:user_two) %>
+
+task_three:
+  id: <%= Fixtures.identify(:task_three) %>
+  name: Task3NameString
+  notes: Task3NotesText
+  start_time: 2010-03-31 10:47:16
+  end_time: 2010-03-31 10:47:16
+  completed: false
+  next_action: false
+  project_id: <%= Fixtures.identify(:project_three) %>
+  location_id: <%= Fixtures.identify(:location_three) %>
+  user_id: <%= Fixtures.identify(:user_three) %>
+
+task_four:
+  id: <%= Fixtures.identify(:task_four) %>
+  name: Task4NameString
+  notes: Task4NotesText
+  start_time: 2010-03-31 10:47:16
+  end_time: 2010-03-31 10:47:16
+  completed: false
+  next_action: false
+  project_id: <%= Fixtures.identify(:project_four) %>
+  location_id: <%= Fixtures.identify(:location_four) %>
+  user_id: <%= Fixtures.identify(:user_four) %>

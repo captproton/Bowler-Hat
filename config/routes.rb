@@ -1,4 +1,27 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :users
+
+  map.resources :tasks
+
+  map.resources :notes
+
+  map.resources :projects
+
+  map.resources :locations
+
+  
+  # Map application root to default RestfulX controller
+  map.root :controller => "flex"
+  
+  # The priority is based upon order of creation: first created -> highest priority.
+
+  # Sample of regular route:
+  #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
+  # Keep in mind you can assign values other than :controller and :action
+
+  # Sample of named route:
+  #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
+  # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
@@ -8,6 +31,12 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
+  
+  # Sample resource route with more complex sub-resources
+  #   map.resources :products do |products|
+  #     products.resources :comments
+  #     products.resources :sales, :collection => { :recent => :get }
+  #   end
 
   # Sample resource route within a namespace:
   #   map.namespace :admin do |admin|
@@ -20,10 +49,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
-  # map.home '', :controller => 'home', :action => 'dashboard'
-  # map.with_options :controller => 'sessions'  do |m|
-  #   m.login  '/login',  :action => 'new'
-  #   m.logout '/logout', :action => 'destroy'
-  # end
-
+  # Install the default routes as the lowest priority.
+  # Note: These default routes make all actions in every controller accessible via GET requests. You should
+  # consider removing the them or commenting them out if you're using named routes and resources.
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
 end

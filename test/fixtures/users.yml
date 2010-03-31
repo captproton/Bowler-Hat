@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+user_one:
+  id: <%= Fixtures.identify(:user_one) %>
+  login: User1LoginString
+  first_name: User1FirstNameString
+  last_name: User1LastNameString
+  email: User1EmailString
+
+user_two:
+  id: <%= Fixtures.identify(:user_two) %>
+  login: User2LoginString
+  first_name: User2FirstNameString
+  last_name: User2LastNameString
+  email: User2EmailString
+
+user_three:
+  id: <%= Fixtures.identify(:user_three) %>
+  login: User3LoginString
+  first_name: User3FirstNameString
+  last_name: User3LastNameString
+  email: User3EmailString
+
+user_four:
+  id: <%= Fixtures.identify(:user_four) %>
+  login: User4LoginString
+  first_name: User4FirstNameString
+  last_name: User4LastNameString
+  email: User4EmailString
